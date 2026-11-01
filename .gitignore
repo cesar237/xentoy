@@ -1,0 +1,7 @@
+# artifacts from linux driver compilation
+*.o
+*.ko
+*.mod.c
+*.order
+*.symvers
+*.cmd

@@ -32,7 +32,7 @@ static int __init xentoy_init(void) {
         return -ENODEV;
     }
 
-    if (xenbus_scanf(XBT_NIL, "domid", "%u", &domid) == 1)
+    if (xenbus_scanf(XBT_NIL, "domid", "", "%u", &domid) == 1)
         pr_info("xentoy: domid %u\n", domid);
     else
         pr_err("xentoy: failed to read domid from xenstore\n");

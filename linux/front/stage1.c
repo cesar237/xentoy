@@ -1,3 +1,4 @@
+#include <linux/slab.h>
 #include <linux/module.h>
 #include <xen/xen.h>
 #include <xen/xenbus.h>
